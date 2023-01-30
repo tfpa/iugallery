@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3D Art Museum</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<link rel="stylesheet" type="text/css" href="3DArtMuseum.css">
+	</head>
+	<body>
+		<div id="pleasewait"><table><tr><td><img src="3DArtMuseum.png" alt="logo"/><br/><br/>Visitanos en: <b>Calle de Ejemplo 123, Capital Federal, Buenos Aires</b>.<br/><br/>&iquest;C&oacute;mo llegar? En colectivo (<b>l&iacute;neas 45, 53 y 122</b>) o Subte <b>(l&iacute;neas A, B y C)</b>.</td></tr></table><div id="pleasewaitcontainer"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div>
+
+		<div id="buttonenter"><div>Comenzar la visita virtual</div></div>
+		<div id="content"><div id="container"></div></div>
+		<div id="controls"><div id="controls_minus"></div><div id="controls_plus"></div></div>
+		<div id="info"><div id="infotext"></div></div>
+		<div id="about">por LRusso.com</div>
+
+		<script src="3DArtMuseumPleaseRotate.js"></script>
+		<script src="3DArtMuseum.js"></script>
+		<script>
+
+			drawRoom();
+
+			addToLeft(40, 200, "1.jpg","strawberry.mp3","I love IU")
+			addToLeft(40, 125, "2.jpg","strawberry.mp3","I love IU")
+			addToLeft(40, 50, "3.jpg","strawberry.mp3","I love IU")
+			addToLeft(40, -50, "4.jpg","strawberry.mp3","I love IU")
+			addToLeft(40, -160, "5.jpg","strawberry.mp3","I love IU")
+
+			addToRight(40, -160, "6.jpg","strawberry.mp3","I love IU")
+			addToRight(40, -50, "7.jpg","strawberry.mp3","I love IU")
+			addToRight(40, 50, "8.jpg","strawberry.mp3","I love IU")
+			addToRight(40, 125, "9.jpg","strawberry.mp3","I love IU")
+			addToRight(40, 200, "10.jpg","strawberry.mp3","I love IU")
+			
+			
+			addToFront(40, -320, "11.jpg","strawberry.mp3","I love IU")
+			addToFront(40, -250, "12.jpg","strawberry.mp3","I love IU")
+			addToFront(40, -170, "13.jpg","strawberry.mp3","I love IU")
+			addToFront(40, -80, "14.jpg","strawberry.mp3","I love IU")
+			addToFront(40, 0, "15.jpg","strawberry.mp3","I love IU")
+			
+			addToBack(40, 0, "16.jpg","strawberry.mp3","I love IU")
+			addToBack(40, -80, "17.jpg","strawberry.mp3","I love IU")
+			addToBack(40, -170, "18.jpg","strawberry.mp3","I love IU")
+			addToBack(40, -250, "19.jpg","strawberry.mp3","I love IU")
+			addToBack(40, -320, "20.jpg","strawberry.mp3","I love IU")
+
+			renderRoom();
+
+			welcome("celebrity.mp3", "no idea");
+
+		</script>
+	</body>
+</html>
